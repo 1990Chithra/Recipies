@@ -1,0 +1,19 @@
+<div>
+    <h1 class="text-center m-3 p-3" style="color: brown;">Recipies</h1>
+   <div class="row m-5 p-5">
+    <div class="card m-3 p-3 shadow" *ngFor="let recipe of allrecipies" style="width: 400px;height: 770px;">
+        <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+          <img src={{recipe.image}} class="img-fluid ms-4" style="width: 300px;height: 200px;"/>
+          <a href="#!">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+          </a>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"><b>Name:-</b>{{recipe.name}}</h5>
+          <p class="card-text" style="justify-content: center;"><b>Ingredients:-</b>{{recipe.ingredients}}</p>
+          <p class="card-text" style="justify-content: center;"><b>Instructions:-</b>{{recipe.instructions}}</p>
+        </div>
+    </div>
+
+   </div>
+</div>
